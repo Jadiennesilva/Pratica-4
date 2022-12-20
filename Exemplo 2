@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+char* negativo(int n){
+	if(n>=0){
+	return"falso";
+	}
+	return "verdadeiro";	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+}
+
+int main(){
+    int Num;
+    printf("Digite um numero:");
+    scanf("%d",&Num);
+
+    char* b = negativo(Num);
+    
+    printf("o número é negativo? %s",b);
+
+
+
+    return 0;
+}
