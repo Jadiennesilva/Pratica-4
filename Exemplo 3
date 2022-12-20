@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+ 
+  int fatorial(int n){
+    int fat=1;
+    
+    setlocale(LC_ALL, "Portuguese_Brazil");
+    for(int i=n; i>1; i--){
+    fat= fat * i;
+	}
+	
+	return fat;
+  }
+  
+  
+int main(){
+	
+	int num, f;
+	
+	printf("digite um numero:");
+	scanf("%d",&num);
+	
+	f= fatorial(num);
+	printf("o fatorial é %d",f);
+	
+  
+ 
+   system("pause");
+    return 0;
+}
+
+
+
+
