@@ -1,1 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
+int multiplica(int AV1, int AV2){
+  int resultado;
+  resultado = AV1 * AV2;
+  return(resultado); 
+}
+
+
+
+int main(void){
+	
+  int N1, N2, resultado;
+  printf("Digite o primeiro valor:");
+  scanf("%d", &N1);
+  
+  printf("Digite o segundo valor:");
+  scanf("%d", &N2);
+  
+
+  resultado = multiplica(N1, N2);
+  
+  printf("Resultado = %d\n", resultado);
+
+
+
+
+    return 0;
+}
